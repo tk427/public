@@ -3,7 +3,7 @@ Auto-loaded PowerShell Quality of Life Scripts.
 
 Various Functions, alaises, and variables that imrpove your quality of live and are auto loaded with PowerShell(ISE) or Visual Studio Code.  The scripting mainly focuses on Windows Active Directory management.  This idea came from lessions I learned in PowerShell and provides a framework for Quality of Life Improvements for PowerShell Scripting.  Some of these items are real world tools that I use on a regular basis, others were proof of concepts that didn't have good real world applications.
 
-This Repo includes
+This Repo includes:
 * PowerShell Profile Examples
   * Microsoft VSCode
     * Set's Working Folder
