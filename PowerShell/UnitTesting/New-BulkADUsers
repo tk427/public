@@ -1,0 +1,21 @@
+<#
+.SYNOPSIS
+    Bulk Generates AD User Accounts
+    Code Author     : Tim Fox
+    Dependencies    : Local File Access
+    Creation Date   : 11/03/2019 13:05 PM 
+    Code Version    : 20191103-1
+    
+.DESCRIPTION
+    Generates a bulk amount of AD User Accounts for testing.
+OPTIONAL parameter include
+.PARAMETER PARAMETER NAME
+    PARAMETER DESCRIPTION
+OPTIONAL parameter include
+.EXAMPLE
+.NOTES
+#>
+
+# 1..500 creates an array of items between 1 & 500
+1..500 | 
+  ForEach-Object {new-aduser -name "User$PSItem" -AccountPassword (ConvertTo-SecureString -AsPlainText "Welcome#$PSItem!" -force) -Enabled:True}
