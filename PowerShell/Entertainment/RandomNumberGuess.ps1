@@ -9,4 +9,4 @@ Do {
     While ($guess -ne $num)
     $again = Read-Host "`nWould you like to play again? (Y/n)"
     }
-    Until ($again -ne "Y"
+    Until ($again -ne "Y")
