@@ -5,3 +5,5 @@ This Repo includes:
 * Get-RandomFromList
   * Inputs a list of items (names), selects one, and removes it from the list.
   * This was created as a challange to create a script to pick contest winners.
+* Get-CPUTemp
+ * Attempt at displaying and recording the CPU Temp
