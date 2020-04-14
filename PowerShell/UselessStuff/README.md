@@ -7,3 +7,7 @@ This Repo includes:
   * This was created as a challange to create a script to pick contest winners.
 * Get-CPUTemp
   * Attempt at displaying and recording the CPU Temp
+* Registry Settings
+  * Change the OEM Information of your PC
+* Mouse Jiggler
+  * A simple script that jiggles the mouse from it's current position to a random one that is between +30 & -30 on the X & Y Axis
