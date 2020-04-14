@@ -1,0 +1,16 @@
+Clear-Host
+Echo "Moving mouse..."
+Add-Type -AssemblyName System.Windows.Forms
+
+$PlusOrMinusY = Get-Random -Minimum -30 -Maximum 30
+$PlusOrMinusX = Get-Random -Minimum -30 -Maximum 30
+while ($true)
+{
+  $p = [System.Windows.Forms.Cursor]::Position
+  $x = $p.X + $PlusOrMinusX
+  $y = $p.Y + $PlusOrMinusY
+  [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
+  Start-Sleep -Seconds 900
+  $PlusOrMinusY = Get-Random -Minimum -30 -Maximum 30
+  $PlusOrMinusX = Get-Random -Minimum -30 -Maximum 30
+}
