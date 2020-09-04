@@ -11,3 +11,5 @@ This Repo includes
    * Get-WSUSGroupMemberships.ps1 - Lists the members of various predefined WSUS Groups for patch tracking
  * WS
    * WorkStation-Restart.ps1 - Script that restarts all machines in a specific AD OU that do not have the exception flag set
+ * Misc
+   * Remove-FolderSpaces.ps1 - Script that recursively removes spaces from any folder names under the root folder
