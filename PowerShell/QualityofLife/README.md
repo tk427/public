@@ -1,7 +1,7 @@
 # QualityofLife_PS_Scripts
 Various scripts that do not fit under the autoload repo
 
-This Repo includes
+This Repo includes:
 * Active Directory Related Scripts
   * Set-msTSPrimaryDesktop.ps1 - Allows you to set the msTSPrimaryDesktop AD Attribute for users and map desktops for Terminal Services
   * Password-ExpirationReport.ps1 - Generates a notification to the user and a report to helpdesk of expiring AD Passwords
