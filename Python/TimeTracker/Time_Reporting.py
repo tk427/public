@@ -5,7 +5,7 @@ from tkinter import *
 # other house keeping & QOL stuff
 import getpass
 username = getpass.getuser() # Generates a variable with the logged in username
-from datetime import date
+from datetimed import date
 today = str(date.today()) # Generates a date string as YYYY-MM-DD
   
 # globally declare wb and sheet variable 
