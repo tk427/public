@@ -17,12 +17,12 @@ OPTIONAL parameter include
 .NOTES
 #>
 
-$DestPath ="d:\child" # Destination Path
-$pass = Get-Random -Minimum 1 -Maximum 15
+$DestPath ="F:\child" # Destination Path
+$pass = Get-Random -Minimum 1 -Maximum 7
 # $pass = 1 # Comment line to generate Random Number
 $number = Get-Random -Minimum 1 -Maximum 99
 # $number = 1 # Comment line to generate Random Number
-$minutes = Get-Random -Minimum 1 -Maximum 15
+$minutes = Get-Random -Minimum 1 -Maximum 5
 # $minutes = 2 # Comment line to generate Random Number
 $c_pass = $pass
 
@@ -38,9 +38,9 @@ do {
         clear-host
         write-host $c_pass Passes Total - $pass Passes Left
         write-host $sw.elapsed.minutes minutes out of $minutes minutes has elapsed in this Pass
-        write-host Files Longer than $length kb will be deleted at the end of the Pass
+        write-host Files Larger than $length kb will be deleted at the end of the Pass
         write-host File $count
-        Get-ChildItem $DestPath\*.* -recurse >> $DestPath\$count.txt
+        get-childitem $DestPath -Recurse | out-file $DestPath\$count.txt -Append
         $count = $count + $number
     }
     $number++
