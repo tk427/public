@@ -1,7 +1,14 @@
-﻿<#
-
-This script only captures live systems!!!!!!!
-
+<#
+.SYNOPSIS
+    Proof of concept DNS Sweep of an IP Range    
+    Code Author     : Tim Fox
+    Dependencies    : modules, (include permission types, e.g., admin account)
+    Creation Date   : 08/05/2019 09:37 AM 
+    Code Version    : 20210716-1
+    
+.DESCRIPTION
+    Proof of concept script to generate a report of all know DNS objects on an IP range.
+.NOTES
 #>
 
 Clear-Host
