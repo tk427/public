@@ -13,3 +13,4 @@ A collection of PowerShell scripts and code snippets that I have generated based
 * Simple Unit Testing Scripts
 * Other Miscellaneous Scripts
   * Mainly related to Workstations
+* PowerShell PowerPoint for a talk I was proposing at DogFood
