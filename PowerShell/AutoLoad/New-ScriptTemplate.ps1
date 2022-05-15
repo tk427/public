@@ -19,25 +19,28 @@ OPTIONAL parameter include
 .NOTES
 #>
 
-function New-ScriptTemplate {param($scriptName = $(Throw "Requires a valid string of text"));
-$user = $env:username
-$today = Get-Date -format 'MM/dd/yyyy HH:mm tt' # Sets Date String
-$version =  Get-Date -format yyyyMMdd
-Add-Content "$scriptName.ps1" "<#
-.SYNOPSIS
-    What the heck does this thing do?
-    Code Author     : $user
-    Dependencies    : modules, (include permission types, e.g., admin account)
-    Creation Date   : $today 
-    Code Version    : $($version)-1
-    
-.DESCRIPTION
-    Detailed things about this script.
-OPTIONAL parameter include
-.PARAMETER PARAMETER NAME
-    PARAMETER DESCRIPTION
-OPTIONAL parameter include
-.EXAMPLE
-.NOTES
-#>"
+function New-ScriptTemplate 
+{
+    param($scriptName = $(Throw "Requires a valid string of text"));
+    $user = $env:username
+    $today = Get-Date -format 'MM/dd/yyyy HH:mm tt' # Sets Date String
+    $version =  Get-Date -format yyyyMMdd
+    $body = "<#
+    .SYNOPSIS
+        What the heck does this thing do?
+        Code Author     : $user
+        Dependencies    : modules, (include permission types, e.g., admin account)
+        Creation Date   : $today 
+        Code Version    : $($version)-1
+        
+    .DESCRIPTION
+        Detailed things about this script.
+    OPTIONAL parameter include
+    .PARAMETER PARAMETER NAME
+        PARAMETER DESCRIPTION
+    OPTIONAL parameter include
+    .EXAMPLE
+    .NOTES
+    #>"
+    $body | Add-Content "$scriptName.ps1" 
 }
