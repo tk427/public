@@ -21,6 +21,8 @@ Function Write-Note
 {
     param($message);
     $date = Get-Date -Format "dddd MM/dd/yyyy HH:mm:ss K"
-    Write-Host $date - $message
-    "$date - $message" | Out-File "D:\code\PowerShellTranscripts\$env:username\$(get-date -f yyyy-MM-dd)-Notes.txt" -Append
+    $MessagePackage = "$date - $message"
+    Write-Host $MessagePackage
+    # "$date - $message" | Out-File "D:\code\PowerShellTranscripts\$env:username\$(get-date -f yyyy-MM-dd)-Notes.txt" -Append #-Encoding "utf8"
+    Add-content -path "D:\code\PowerShellTranscripts\$env:username\$(get-date -f yyyy-MM-dd)-Notes.txt" $MessagePackage
 }
