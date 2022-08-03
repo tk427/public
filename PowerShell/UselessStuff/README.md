@@ -12,5 +12,8 @@ This Repo includes:
 * Mouse Jiggler
   * A simple script that jiggles the mouse from it's current position to a random one that is between +30 & -30 on the X & Y Axis
 * Inspirational Sayings
- * PowerShell function that presents TV & Movie quotes.
- 
+  * PowerShell function that presents TV & Movie quotes.
+ * Simulate Keypress
+  * Prototype script that opens and closes the Start Menu.
+ * Simulate Keypress 1
+  * Adds a randomized assortment of keypresses that the script can use.
