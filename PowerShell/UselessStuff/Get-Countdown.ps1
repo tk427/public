@@ -1,4 +1,8 @@
-﻿$i= "true"
+<#
+    Counts down to a specific date/time
+#>
+
+$i= "true"
 $TargetDate = "8/19/2022 16:00:00"
 
 Do
