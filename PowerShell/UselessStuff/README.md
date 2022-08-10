@@ -18,4 +18,4 @@ This Repo includes:
 * Simulate Keypress 1
   * Adds a randomized assortment of keypresses that the script can use.
  * Get-Countdown
-  * Countdown to a predefied date/time.
+   * Countdown to a predefied date/time.
