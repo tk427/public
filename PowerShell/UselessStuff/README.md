@@ -19,3 +19,5 @@ This Repo includes:
   * Adds a randomized assortment of keypresses that the script can use.
  * Get-Countdown
    * Countdown to a predefied date/time.
+ * Write-Note
+   * Creates text file that is appended with notes on the fly.
