@@ -1,7 +1,6 @@
 <#
 .SYNOPSIS
     Function that searches for a string in GPO
-
     Original Code Author    : Tony Murray
     Update Code Author      : Tim Fox
     Dependencies            : modules, (include permission types, e.g., admin account)
@@ -11,16 +10,13 @@
     
 .DESCRIPTION
     Function that searches for a string in GPO using the domain of the run as user.
-
 OPTIONAL parameter include
 .PARAMETER PARAMETER NAME
     PARAMETER DESCRIPTION
 OPTIONAL parameter include
-
 .EXAMPLE
     Get-GPOsForString <string of text>
 .NOTES
-
 #>
 
 function Get-GPOsForString {param($String = $(Throw "Requires a String of Text"));
@@ -34,11 +30,12 @@ function Get-GPOsForString {param($String = $(Throw "Requires a String of Text")
     $allGposInDomain = Get-GPO -All -Domain $DomainName
 
 # Look through each GPO's XML for the string
+    Clear-Host
     Write-Host "Starting search...."
     foreach ($gpo in $allGposInDomain) {
         $report = Get-GPOReport -Guid $gpo.Id -ReportType Xml
         if ($report -match $string) {
-            write-host "********** Match found in: $($gpo.DisplayName) **********"
+            write-host "********** Match found in: $($gpo.DisplayName) **********" -ForegroundColor Yellow
         } # end if
         else {
             Write-Host "No match in: $($gpo.DisplayName)"

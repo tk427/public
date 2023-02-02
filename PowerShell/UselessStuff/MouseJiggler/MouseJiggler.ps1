@@ -18,6 +18,7 @@ OPTIONAL parameter include
 .EXAMPLE
       Run script, leave PowerShell open in the background.
 .NOTES
+    THIS SCRIPT IS NOT FUNCTIONAL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #>
 
 Clear-Host
