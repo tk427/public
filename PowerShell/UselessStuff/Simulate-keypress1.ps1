@@ -1,10 +1,10 @@
 ﻿# https://stackoverflow.com/questions/19824799/how-to-send-ctrl-or-alt-any-other-key
-$val = 0
+$val = 51
 Do 
 {
-    $wait = get-random -minimum 37 -maximum 103 # number of seconds to wait
+    $wait = get-random -minimum 56 -maximum 183 # number of seconds to wait
     $val++ # incriminate value number
-    $keypress = Get-Random -Minimum 0 -Maximum 12 # Must be atleast 1 greater than the options below
+    $keypress = Get-Random -Minimum 0 -Maximum 10 # Must be atleast 1 greater than the options below
     Add-Type -AssemblyName System.Windows.Forms
     Switch ($keypress)
     {
