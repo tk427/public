@@ -24,6 +24,6 @@ foreach ($folder in $folders)
 {
     if ($folder.Name.Contains(" "))
     {
-        Rename-Item -Path $folder.FullName $folder.Name.Replace(" ","")
+        Rename-Item -Path $folder.FullName $folder.Name.Replace(" ","_")
     }
 }
